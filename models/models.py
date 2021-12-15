@@ -39,6 +39,8 @@ class Classifier(nn.Module):
             Use options.hidden_sizes to store all hidden sizes, (for simplicity, you might want to 
             include the input and output as well).
         """
+
+        """The necessary layers were 3 linear ones, I added a few different ones..."""
         self.conv2d = nn.Sequential(
             nn.Conv2d(in_channels=1, out_channels=3, kernel_size=(3, 3), stride=(2, 1)),
             nn.Flatten(),

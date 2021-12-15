@@ -5,11 +5,11 @@ class ClassificationOptions(Options):
     def __init__(self):
         super().__init__()
         # dataset related
-        self.batch_size_test = 32*2
-        self.batch_size_train = 128*2
+        self.batch_size_test = 32*4
+        self.batch_size_train = 128*4
 
         # hyperparameters
-        self.lr = 0.01
+        self.lr = 0.2
         self.num_epochs = 50
         self.hidden_sizes = {
             'layer1_input_shape': 3 * 13 * 26,  # 28*28

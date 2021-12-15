@@ -197,7 +197,7 @@ def save(model: nn.Module, options: Options):
 
 def load(model: nn.Module, options: Options):
     try:
-        model.load_state_dict(torch.load(options.load_path + options.model_name))
+        model.load_state_dict(torch.load(options.load_path + options.model_name), False)
         model.eval()
     except IOError:
         print("Could not load module!!")

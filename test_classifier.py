@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     # load the model
     utils.load(model, options)
-
+    
     # Test the model
     print("The Accuracy of the model is: ")
     test_classification_model(model, dataset, options)
