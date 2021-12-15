@@ -12,6 +12,8 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+runs
+
 # AWS User-specific
 .idea/**/aws.xml
 
