@@ -5,17 +5,17 @@ class LinearRegressionOptions(Options):
     def __init__(self):
         super().__init__()
         # dataset related
-        self.batch_size_train = 10000
-        self.batch_size_test = 2000
-        self.train_dataset_size = 1000000
-        self.test_dataset_size = 200000
+        self.batch_size_train = 1000
+        self.batch_size_test = 200
+        self.train_dataset_size = 100000
+        self.test_dataset_size = 20000
         self.min_house_size = 30
-        self.max_house_size = 700
+        self.max_house_size = 70
         self.noise_house_data = 50000
 
         # hyperparameters
         self.lr = 0.05
-        self.num_epochs = 1
+        self.num_epochs = 30
 
 
 """
